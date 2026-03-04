@@ -1,0 +1,175 @@
+LANGUAGE_NAME فارسی
+
+# -----------------------------------------------------------------------------
+# Menu strings
+# -----------------------------------------------------------------------------
+
+MENU_OPEN           بازکردن...
+MENU_SAVE           ذخیره
+MENU_SAVE_AS        ذخیره به عنوان...
+MENU_SETTINGS       تنظیمات
+MENU_MANUAL         راهنمای آنلاین
+MENU_BUG_TRACKER    ردیابی اشکال
+MENU_ABOUT          درباره
+MENU_EXPORT         خروجی گرفتن...
+MENU_QUIT           خروج
+
+# -----------------------------------------------------------------------------
+# Project
+# -----------------------------------------------------------------------------
+PROJECT_NAME_UNTITLED                   بی نام
+PROJECT_NAME_UNTITLED_UNSAVED           بی نام (*)
+# -----------------------------------------------------------------------------
+# Toolbar
+# -----------------------------------------------------------------------------
+TOOLBAR_TOOLTIP_NEW_FILE        ایجاد فایل جدید
+TOOLBAR_TOOLTIP_OPEN_FILE       بازکردن فایل
+TOOLBAR_TOOLTIP_SAVE_FILE       ذخیره فایل
+TOOLBAR_TOOLTIP_UNDO            واگردانی عمل
+TOOLBAR_TOOLTIP_REDO            بازانجام عمل
+TOOLBAR_TOOLTIP_BRUSH_TOOL      ابزار قلم
+TOOLBAR_TOOLTIP_RECTANGLE_TOOL  ابزار مستطیل
+TOOLBAR_TOOLTIP_CIRCLE_TOOL     ابزار دایره
+TOOLBAR_TOOLTIP_LINE_TOOL       ابزار خط
+TOOLBAR_TOOLTIP_ERASER_TOOL     پاک کن
+TOOLBAR_TOOLTIP_SELECT_TOOL     ابزار انتخاب
+TOOLBAR_TOOLTIP_BRUSH_COLOR     رنگ قلم
+TOOLBAR_TOOLTIP_BRUSH_SIZE      اندازه قلم
+TOOLBAR_TOOLTIP_CANVAS_COLOR    رنگ بوم
+TOOLBAR_FULLSCREEN_TOGGLE       حالت تمام صفحه
+
+# -----------------------------------------------------------------------------
+# Color Palette Picker
+# -----------------------------------------------------------------------------
+COLOR_PALETTE_PICKER_HINT_NEW        ایجاد پالت رنگ جدید
+COLOR_PALETTE_PICKER_HINT_EDIT       ویرایش پالت رنگ فعلی
+COLOR_PALETTE_PICKER_HINT_DUPLICATE  تکثیر پالت رنگ فعلی
+COLOR_PALETTE_PICKER_HINT_DELETE     حذف دائمی پالت رنگ فعلی
+
+# -----------------------------------------------------------------------------
+# Statusbar strings
+# -----------------------------------------------------------------------------
+
+STATUSBAR_POSITION              موقعیت
+STATUSBAR_ZOOM                  زوم
+STATUSBAR_PRESSURE              فشار قلم
+STATUSBAR_FPS                   فریم
+STATUSBAR_STROKES               خطوط
+STATUSBAR_POINTS                نقاط
+
+# -----------------------------------------------------------------------------
+# Settings strings
+# -----------------------------------------------------------------------------
+
+SETTINGS_TITLE                          تنظیمات
+SETTINGS_GENERAL                        عمومی
+SETTINGS_APPEARANCE                     ظاهری
+SETTINGS_RENDERING                      رندرینگ
+SETTINGS_KEYBINDINGS                    کلید ها
+SETTINGS_PRESSURE_SENSITIVITY           حساسیت به فشار
+SETTINGS_CONSTANT_PRESSURE              فشار ثابت
+SETTINGS_STABILIZER_STRENGTH            قدرت پایدار کننده
+SETTINGS_BRUSH_SIZE                     اندازه پیشفرض قلم
+SETTINGS_PROJECT_FOLDER                 پوشه پیشفرض ذخیره/بارگذاری
+SETTINGS_PROJECT_FOLDER_PLACEHOLDER     برای مثال C:/Users/me/Etch
+SETTINGS_GRID_SIZE                      اندازه گرید
+SETTINGS_LANGUAGE                       زبان
+SETTINGS_TABLET_DRIVER                  درایور تبلت
+SETTINGS_THEME                          تم
+SETTINGS_THEME_DARK                     حالت تاریک
+SETTINGS_THEME_LIGHT                    حالت روشن
+SETTINGS_UI_SCALE                       مقیاس رابط کاربری
+SETTINGS_UI_SCALE_AUTO                  خودکار
+SETTINGS_UI_SCALE_CUSTOM                سافرشی
+SETTINGS_GRID_SIZE                      اندازه گرید
+SETTINGS_GRID_PATTERN                   نوع گرید
+SETTINGS_GRID_PATTERN_DOTS              نقطه
+SETTINGS_GRID_PATTERN_LINES             خط
+SETTINGS_GRID_PATTERN_NONE              هیچکدام
+SETTINGS_CANVAS_COLOR                   رنگ بوم
+SETTINGS_FPS_FOREGROUND                 فریم پیش زمینه
+SETTINGS_FPS_BACKGROUND                 فریم پس زمینه
+SETTINGS_BRUSH_CAPS                     حالت گردی قلم
+SETTINGS_BRUSH_CAPS_FLAT                تخت
+SETTINGS_BRUSH_CAPS_ROUND               گرد
+SETTINGS_RESTART_NOTICE                 برای اعمال تنظیمات جدید راه اندازی مجدد لازم است
+SETTINGS_TOOL_PRESSURE                  فشار پیشفرض ابزار
+
+# -----------------------------------------------------------------------------
+# About dialog strings
+# -----------------------------------------------------------------------------
+
+ABOUT_DIALOG_TITLE              درباره
+ABOUT_DIALOG_COPYRIGHT          © 2026 ماهان خلیلی و مشارکت کنندگان
+ABOUT_DIALOG_LICSENSE           لایسنس گذاری Etch:
+ABOUT_DIALOG_BASED_ON           پایه Etch:
+ABOUT_DIALOG_EASTEREGG          کاراکتر بازی:
+
+# -----------------------------------------------------------------------------
+# Unsaved changes dialog
+# -----------------------------------------------------------------------------
+
+UNSAVED_CHANGES_DIALOG_TITLE    هشدار
+UNSAVED_CHANGES_DIALOG_TEXT     آیا می خواهید پیش از بستن فایل (ها) تغییرات خود را ذخیره کنید؟
+
+# -----------------------------------------------------------------------------
+# New palette dialog
+# -----------------------------------------------------------------------------
+NEW_PALETTE_DIALOG_CREATE_TITLE 		پالت جدید
+NEW_PALETTE_DIALOG_DUPLICATE_TITLE 		تکثیر پالت
+NEW_PALETTE_DIALOG_PLACEHOLDER 			نام پالت
+
+# -----------------------------------------------------------------------------
+# Delete palette dialog
+# -----------------------------------------------------------------------------
+DELETE_PALETTE_DIALOG_TITLE 			حذف پالت
+DELETE_PALETTE_DIALOG_TEXT 				آیا مطمئن هستید که میخواهید پالت را به طور دائمی حذف کنید؟ پالت برای حذف:
+
+# -----------------------------------------------------------------------------
+# Edit palette dialog
+# -----------------------------------------------------------------------------
+EDIT_PALETTE_DIALOG_TITLE 		ویرایش پالت
+
+# -----------------------------------------------------------------------------
+# Error/Alert messages
+# -----------------------------------------------------------------------------
+
+ALERT_EDITING_BUILTIN_PALETTE       ویرایش پالت های داخلی ممکن نیست. اگر می خواهید این پالت را سفارشی کنید ابتدا تکثیرش کنید و سپس آن نسخه را ویرایش کنید.
+ALERT_DELETING_BUILTIN_PALETTE      حذف پالت های داخلی ممکن نیست.
+
+# -----------------------------------------------------------------------------
+# Generic strings
+# -----------------------------------------------------------------------------
+
+SAVE            ذخیره
+DISCARD         نادیده گرفتن
+CANCEL          لغو
+DELETE          حذف
+
+# -----------------------------------------------------------------------------
+# Action names
+# -----------------------------------------------------------------------------
+
+ACTION_shortcut_save_project        ذخیره فایل
+ACTION_shortcut_new_project         فایل جدید
+ACTION_shortcut_open_project        بازکردن فایل
+ACTION_shortcut_close_project       بستن فایل
+ACTION_shortcut_quit                خروج
+ACTION_shortcut_undo                واگردانی
+ACTION_shortcut_redo                بازانجام
+ACTION_shortcut_brush_tool          ابزار قلم
+ACTION_shortcut_line_tool           ابزار خط
+ACTION_shortcut_eraser_tool         ابزار پاک کن
+ACTION_shortcut_select_tool         ابزار انتخاب
+ACTION_shortcut_rectangle_tool      ابزار مستطیل
+ACTION_shortcut_circle_tool         ابزار دایره
+ACTION_shortcut_export_project      خروجی گرفتن فایل
+ACTION_deselect_all_strokes         حذف همه خطوط
+ACTION_delete_selected_strokes      حذف خطوط انتخاب شده
+ACTION_copy_strokes                 کپی
+ACTION_paste_strokes                جای گذاری
+ACTION_duplicate_strokes            تکثیر خطوط
+ACTION_toggle_zen_mode              حالت تمرکز
+ACTION_toggle_player                فعال/غیرفعال سازی کاراکتر بازی
+ACTION_toggle_fullscreen            حالت تمام صفحه
+ACTION_canvas_pan_key               کلید پن کردن
