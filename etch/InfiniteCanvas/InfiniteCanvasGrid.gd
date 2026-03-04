@@ -13,8 +13,8 @@ func _ready() -> void:
 	_pattern = Settings.get_value(Settings.APPEARANCE_GRID_PATTERN, Config.DEFAULT_GRID_PATTERN)
 
 	_camera = get_node(camera_path)
-	_camera.zoom_changed.connect(queue_redraw)
-	_camera.position_changed.connect(queue_redraw)
+	_camera.zoom_changed.connect(queue_redraw.unbind(1))
+	_camera.position_changed.connect(queue_redraw.unbind(1))
 	get_viewport().size_changed.connect(queue_redraw)
 
 
