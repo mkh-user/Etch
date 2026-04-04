@@ -29,7 +29,7 @@ func set_zoom_level(zoom_level: float) -> void:
 func do_center(screen_space_center_point: Vector2) -> void:
 	#var screen_space_center := get_viewport().get_size() / 2
 	# TODO(gd4): no idea if this is the eqivialnt of the above line
-	var screen_space_center := Vector2(DisplayServer.window_get_size().x, DisplayServer.window_get_size().y)
+	var screen_space_center := Vector2(DisplayServer.window_get_size())
 
 	var delta := screen_space_center - screen_space_center_point
 	get_viewport().warp_mouse(screen_space_center)

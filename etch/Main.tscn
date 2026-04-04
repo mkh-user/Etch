@@ -222,6 +222,8 @@ use_native_dialog = true
 [connection signal="toggle_brush_color_picker" from="Topbar/Toolbar" to="." method="_on_toggle_brush_color_picker"]
 [connection signal="tool_changed" from="Topbar/Toolbar" to="." method="_on_tool_changed"]
 [connection signal="undo_action" from="Topbar/Toolbar" to="." method="_on_undo_action"]
+[connection signal="reset_position" from="Statusbar" to="." method="_on_statusbar_reset_position"]
+[connection signal="reset_zoom" from="Statusbar" to="." method="_on_statusbar_reset_zoom"]
 [connection signal="closed" from="BrushColorPicker" to="." method="_on_brush_color_picker_closed"]
 [connection signal="color_changed" from="BrushColorPicker" to="." method="_on_brush_color_picker_color_changed"]
 [connection signal="export_svg" from="MainMenu" to="." method="_export_svg"]

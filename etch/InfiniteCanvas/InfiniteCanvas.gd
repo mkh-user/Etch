@@ -332,6 +332,14 @@ func get_camera_offset() -> Vector2:
 	return _camera.offset
 
 
+func set_camera_offset(offset: Vector2) -> void:
+	_camera.offset = offset
+
+
+func set_camera_zoom(zoom: float) -> void:
+	_camera.set_zoom_level(zoom)
+
+
 func _on_zoom_changed(zoom: float) -> void:
 	_current_project.meta_data[ProjectMetadata.CAMERA_ZOOM] = str(zoom)
 	_current_project.dirty = true

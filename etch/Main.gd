@@ -586,3 +586,11 @@ func _on_theme_changed(path: String) -> void:
 	_settings_dialog.set_theme(new_theme)
 	_settings_dialog.queue_redraw()
 	queue_redraw()
+
+
+func _on_statusbar_reset_position() -> void:
+	_canvas.set_camera_offset(Vector2.ZERO)
+
+
+func _on_statusbar_reset_zoom() -> void:
+	_canvas.set_camera_zoom(1)

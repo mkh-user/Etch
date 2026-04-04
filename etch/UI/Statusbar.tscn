@@ -3,6 +3,14 @@
 [ext_resource type="Theme" uid="uid://u5qnpgxqykiv" path="res://UI/Themes/dark/theme.tres" id="1"]
 [ext_resource type="Script" uid="uid://edn30djeq3db" path="res://UI/Statusbar.gd" id="2"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nkdnk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gvris"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nnlip"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_77fgr"]
+
 [node name="Statusbar" type="Panel" unique_id=735881928 node_paths=PackedStringArray("_strokes_label", "_points_label", "_pressure_label", "_position_label", "_zoom_label", "_fps_label")]
 custom_minimum_size = Vector2(0, 24)
 anchors_preset = 10
@@ -33,17 +41,31 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 0
 
-[node name="PositionLabel" type="Label" parent="MarginContainer/HBoxContainer/Left" unique_id=835448206]
+[node name="PositionLabel" type="Button" parent="MarginContainer/HBoxContainer/Left" unique_id=994658900]
 layout_mode = 2
+size_flags_vertical = 4
+tooltip_text = "(Click to reset position)"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nkdnk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gvris")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nnlip")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_77fgr")
 text = "Position: -"
+flat = true
 
 [node name="Sep" type="Label" parent="MarginContainer/HBoxContainer/Left" unique_id=1770475643]
 layout_mode = 2
 text = "|"
 
-[node name="ZoomLabel" type="Label" parent="MarginContainer/HBoxContainer/Left" unique_id=1659877112]
+[node name="ZoomLabel" type="Button" parent="MarginContainer/HBoxContainer/Left" unique_id=719724782]
 layout_mode = 2
+size_flags_vertical = 4
+tooltip_text = "(Click to reset zoom level)"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nkdnk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gvris")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nnlip")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_77fgr")
 text = "Zoom: -"
+flat = true
 
 [node name="Sep2" type="Label" parent="MarginContainer/HBoxContainer/Left" unique_id=1431241187]
 layout_mode = 2
@@ -79,3 +101,6 @@ text = "|"
 [node name="PointsLabel" type="Label" parent="MarginContainer/HBoxContainer/Right" unique_id=1492894529]
 layout_mode = 2
 text = "Points: 0"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Left/PositionLabel" to="." method="_on_position_label_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Left/ZoomLabel" to="." method="_on_zoom_label_pressed"]

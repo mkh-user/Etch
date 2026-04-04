@@ -1,11 +1,14 @@
 extends Panel
 class_name Statusbar
 
+signal reset_position
+signal reset_zoom
+
 @export var _strokes_label: Label
 @export var _points_label: Label
 @export var _pressure_label: Label
-@export var _position_label: Label
-@export var _zoom_label: Label
+@export var _position_label: Button
+@export var _zoom_label: Button
 @export var _fps_label: Label
 
 var _str_position: String
@@ -54,3 +57,11 @@ func set_stroke_count(brush_stroke_count: int) -> void:
 
 func set_point_count(point_count: int) -> void:
 	_points_label.text = "%s: %d" % [_str_point_count, point_count]
+
+
+func _on_position_label_pressed() -> void:
+	reset_position.emit()
+
+
+func _on_zoom_label_pressed() -> void:
+	reset_zoom.emit()
